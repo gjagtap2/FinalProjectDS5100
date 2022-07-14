@@ -1,0 +1,13 @@
+test_6_ANALYZER_jackpot (__main__.AnalyzerTestSuite) ... ok
+test_7_ANALYZER_combo (__main__.AnalyzerTestSuite) ... ok
+test_8_ANALYZER_facecounts (__main__.AnalyzerTestSuite) ... ok
+test_1_DIE_change_weight (__main__.DieTestSuite) ... ok
+test_2_DIE_rollDie (__main__.DieTestSuite) ... ok
+test_3_DIE_showCurrent_die (__main__.DieTestSuite) ... ok
+test_4_GAME_play (__main__.GameTestSuite) ... ok
+test_5_GAME_show (__main__.GameTestSuite) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.325s
+
+OK
