@@ -10,7 +10,7 @@
 # Synopsis
 
 ![image](https://user-images.githubusercontent.com/47149519/179243782-1bc8a7ee-9862-465d-931d-397d952811c9.png)
-https://cdn.thisiswhyimbroke.com/images/flashing-dungeons-and-dragons-dice-set-dddices-640x533.jpg
+[source](https://cdn.thisiswhyimbroke.com/images/flashing-dungeons-and-dragons-dice-set-dddices-640x533.jpg)
 
 ## Installing
 To install this package, clone this git repository on your local machine. 
