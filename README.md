@@ -20,7 +20,9 @@ This package implements a simple Monte Carlo simulator using a set of related cl
 This package contains three classes - Die, Game, Analyzer - that work in tandem to generate various outcomes
 
 ## Installing
-To install this package, clone this git repository on your local machine by running the following command:
+
+
+To install this package, you need to have python installed on your machine. Start by cloning this git repository on your local machine by running the following command:
 
 ``` python
 git clone https://github.com/gjagtap2/FinalProjectDS5100.git
@@ -33,7 +35,7 @@ On your terminal navigate to the folder where the repository is:
 cd <path>/FinalProjectDS5100
 ```
 
- To install the package type the following command:
+ To install the package type the following command in your terminal:
 
 ``` python
 pip install MonteCarloSimulator
@@ -41,10 +43,10 @@ pip install MonteCarloSimulator
 
 ## Importing
 
-To import this package type the following code:
+To import this package type the following code in a python file:
 
 ``` python
-from montecarlo import * 
+from MonteCarloSimulator.montecarlo import * 
 ```
 
 
@@ -54,19 +56,22 @@ A die has N faces and W weights, and can be rolled to select a face. The die has
 
 
 
-To create a die object, use the `init` method by inputting a list of faces with dtype str or int as the input parameter.
+To instantiate a die object, input a list of faces that are all either strings or integers as the input parameter.
 
 ``` python
-die1 = Die(['H','T','H','T'])
-die2 = Die([1,2,3,4])
+coin = Die(['H','T'])
+fairDice = Die([1,2,3,4,5,6])
+unfairDice = Die([1,2,3,4,5,6])
 ```
 
 
 
-All die faces will have a default weight of 1.0 assigned to it. To change this weight, use the `change_weight` method with parameters for the face you want changed and the new weight you want assigned to it. The new weight you input must have dtype float or have a dtype that can be converted to a float. Note that the weights are just numbers, not a normalized probability distribution.
+All die faces will have a default weight of 1.0 assigned to it. To change this weight, use the `change_weight` method with the following parameters. The first parameter is the face you want changed, and the second parameter is new weight you want assigned to it. The new weight you input must be a float or be something that can be converted to a float. Note that the weights are just numbers, not a normalized probability distribution.
+
+In this example, in the unfair dice defined above, we are changing the weight of the face '2' to having weight 5.0, while all other faces still have weight 1.0
 
 ``` python
-die2.change_weight(2,5)
+unfairDice.change_weight(2,5)
 ```
 
 
@@ -74,16 +79,17 @@ die2.change_weight(2,5)
 To roll the die, use the `rollDie` method to specify how many times you want the die to be rolled. This method defaults to 1 unless you input a different integer. This method computes a random sample from the vector of faces according to the weights, and returns a list of outcomes.
 
 ``` python
-die2.rollDie(10)
+unfairDice.rollDie(10)
 ```
 
 
-
+un
 To show the user the die's current set of faces and weights (since the latter can be changed), use the `showCurrent` method. This returns the dataframe created in the initializer.
 
 ``` python
-die2.showCurrent()
+unfairDice.showCurrent()
 ```
+
 
 
 
@@ -93,7 +99,7 @@ A game consists of rolling one or more dice of the same kind one or more times. 
 
 
 
-To create a game object, use the `init` method by inputting one or more similarly defined die objects in a list as the input parameter.
+To instantiate a game object, input one or more similarly defined die objects in a list as the input parameter.
 
 ``` python
 die1 = Die([1,2,3,4,5,6])
@@ -128,7 +134,7 @@ An analyzer takes the results of a single game and computes various descriptive 
 
 
 
-To create an analyzer object use the `init` method with a game object as the input parameter. At the initialization time, the method infers the data type of the die faces being used.
+To instantiate an analyzer object, input a game object as the input parameter. At the initialization time, the method infers the data type of the die faces being used.
 
 ``` python
 analyzer1 = Analyzer(game1)
