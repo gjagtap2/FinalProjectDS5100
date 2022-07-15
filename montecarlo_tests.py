@@ -11,15 +11,15 @@ pd.options.mode.chained_assignment = None
 
 class DieTestSuite(unittest.TestCase):
 
-    def test_1_DIE_change_weight(self):
+    def test_1_DIE_changeWeight(self):
 
         '''
         The die object of 6 faces has been created below. The weight for face 6 has been changed from 1.0 to 5.0
-        This method checks to see that the change_weight method has run correctly, and the dataframe is updated with the new weight.
+        This method checks to see that the changeWeight method has run correctly, and the dataframe is updated with the new weight.
         Returns "ok" if the method returns a dataframe with the correct weights.
         '''
 
-        dieObject.change_weight(6,5)
+        dieObject.changeWeight(6,5)
         faces = [1,2,3,4,5,6]
         weights = [1.0, 1.0, 1.0, 1.0, 1.0, 5.0]
         expected = pd.DataFrame({

@@ -66,12 +66,12 @@ unfairDice = Die([1,2,3,4,5,6])
 
 
 
-All die faces will have a default weight of 1.0 assigned to it. To change this weight, use the `change_weight` method with the following parameters. The first parameter is the face you want changed, and the second parameter is new weight you want assigned to it. The new weight you input must be a float or be something that can be converted to a float. Note that the weights are just numbers, not a normalized probability distribution.
+All die faces will have a default weight of 1.0 assigned to it. To change this weight, use the `changeWeight` method with the following parameters. The first parameter is the face you want changed, and the second parameter is new weight you want assigned to it. The new weight you input must be a float or be something that can be converted to a float. Note that the weights are just numbers, not a normalized probability distribution.
 
 In this example, in the unfair dice defined above, we are changing the weight of the face '2' to having weight 5.0, while all other faces still have weight 1.0
 
 ``` python
-unfairDice.change_weight(2,5)
+unfairDice.changeWeight(2,5)
 ```
 
 
@@ -201,7 +201,7 @@ This class is composed of the following methods and attributes:
     - weights (dtype=float): an array of 1.0 with length equal to length of faces
     - faces
 
-### change_weight():
+### changeWeight():
 - PURPOSE: a method to change the weight of a single face
 
 - INPUTS

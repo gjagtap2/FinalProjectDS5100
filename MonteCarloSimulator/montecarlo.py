@@ -36,7 +36,7 @@ class Die():
 
 
 
-    def change_weight(self, face, new_weight):
+    def changeWeight(self, face, new_weight):
 
         '''
         PURPOSE: a method to change the weight of a single face
