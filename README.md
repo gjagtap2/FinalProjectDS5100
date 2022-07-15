@@ -103,11 +103,7 @@ A game consists of rolling one or more dice of the same kind one or more times. 
 To instantiate a game object, input one or more similarly defined die objects in a list as the input parameter.
 
 ``` python
-die1 = Die([1,2,3,4,5,6])
-die2 = Die([1,2,3,4,5,6])
-die2.change_weight(6,5)
-
-game1 = Game([die1, die1, die2, die2])
+exampleGame = Game([fairDice, fairDice, unfairDice, unfairDice])
 ```
 
 
@@ -115,7 +111,7 @@ game1 = Game([die1, die1, die2, die2])
 To play the game, use the `play` method with a parameter specifying how many times the dice should be rolled. The results of the play are saved to a private dataframe of shape N rolls by M dice, with the roll number as a named index.
 
 ``` python
-game1.play(1000)
+exampleGame.play(3)
 ```
 
 
@@ -124,9 +120,16 @@ To show the user the results of the most recent play use the `show` method. This
 This parameter defaults to wide form in which the dataframe has a single column index with the roll number, and each die number as a column. The narrow form of the dataframe will have a two-column index with the roll number and the die number, and a column for the face rolled. This parameter should raise an exception of the user passes an invalid option.
 
 ``` python
-game1.show()
+exampleGame.show()
 ```
 
+<img width="183" alt="Screen Shot 2022-07-15 at 2 30 27 PM" src="https://user-images.githubusercontent.com/47149519/179288295-83dd1fa1-e684-42b7-b279-a5d756dfb485.png">
+
+``` python
+exampleGame.show("narrow")
+```
+
+<img width="264" alt="Screen Shot 2022-07-15 at 2 30 53 PM" src="https://user-images.githubusercontent.com/47149519/179288373-fcde96d8-1efe-4ad2-b6bd-8061121382b7.png">
 
 
 ## Analyzing Games
