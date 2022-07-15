@@ -9,8 +9,8 @@
 ---
 # Synopsis
 
-![image](https://user-images.githubusercontent.com/47149519/179243782-1bc8a7ee-9862-465d-931d-397d952811c9.png)
-[source](https://cdn.thisiswhyimbroke.com/images/flashing-dungeons-and-dragons-dice-set-dddices-640x533.jpg)
+![image](https://user-images.githubusercontent.com/47149519/179245696-dc847e5f-79a1-4abc-8f10-eb13cf3559be.png)
+[source](https://media.istockphoto.com/photos/burning-cubes-picture-id482613071?k=20&m=482613071&s=612x612&w=0&h=QCFCpeqIKKLJ3VbEK2Qf_yFqbqAPpjnH3mu7Y3-Uwgo=)
 
 ## Installing
 To install this package, clone this git repository on your local machine. 
