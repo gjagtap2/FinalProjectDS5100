@@ -14,7 +14,7 @@ To install this package, clone this git repository on your local machine.
 On your terminal navigate to the folder where the repository is and type the following command:
 
 ``` python
-pip install -e .
+pip install MonteCarloSimulator
 ```
 
 ## Importing
@@ -262,6 +262,7 @@ Files in this git repository:
 - montecarlo_demo.ipynb
 - montecarlo_tests.py
 - montecarlo.txt
+- FinalProjectSubmissionTemplate.ipynb
 - __init__.py
 - directory.py
 - setup.py
