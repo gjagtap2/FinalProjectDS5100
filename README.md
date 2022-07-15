@@ -141,7 +141,7 @@ An analyzer takes the results of a single game and computes various descriptive 
 To instantiate an analyzer object, input a game object as the input parameter. At the initialization time, the method infers the data type of the die faces being used.
 
 ``` python
-analyzer1 = Analyzer(game1)
+exampleAnalyze = Analyzer(exampleGame)
 ```
 
 
@@ -149,7 +149,7 @@ analyzer1 = Analyzer(game1)
 To compute how many times the game results in all faces being identical use the `jackpot` method. This method returns an integer for the number of time to the user. This method also stores the results as a dataframe of jackpot results as a public attribute with roll number as a named index.
 
 ``` python
-analyzer1.jackpot()
+exampleAnalyze.jackpot()
 ```
 
 
@@ -157,17 +157,27 @@ analyzer1.jackpot()
 To compute the distinct combinations of faces rolled along with their counts use the `combo` method. The combinations are sorted and saved in a dataframe with a multi-columned index, and this method stores the results as a dataframe in a public attribute.
 
 ``` python
-analyzer1.combo()
+exampleAnalyze.combo()
+```
+To view the dataframe of all combos generated, look at the `comboDF` attribute of this method:
+
+``` python
+exampleAnalyze.comboDF
 ```
 
-
+<img width="194" alt="Screen Shot 2022-07-15 at 2 35 21 PM" src="https://user-images.githubusercontent.com/47149519/179289128-84e00b21-dfc6-4692-92a2-619d250521af.png">
 
 To compute the number of times a given face is rolled in each event use the `facecountsperroll` method. For example, if a roll of five dice has all ones, then the counts for this roll would be 5 for the face value '1' and 0 for all other faces.  The dataframe is in wide format( i.e. it has an index of the roll number and face values as columns), and this method stores the results as a dataframe in a public attribute.
 
 ``` python
-analyzer1.facecountsperroll()
+exampleAnalyze.facecountsperroll()
 ```
+To view the dataframe of the face counts for each roll, look at the `facecountsDF` attribute of this method:
 
+``` python
+exampleAnalyze.facecountsDF
+```
+<img width="208" alt="Screen Shot 2022-07-15 at 2 35 40 PM" src="https://user-images.githubusercontent.com/47149519/179289163-976506f5-6ba8-48d9-b53e-3accfe1d6cc6.png">
 
 
 ---
