@@ -89,6 +89,7 @@ To show the user the die's current set of faces and weights (since the latter ca
 ``` python
 unfairDice.showCurrent()
 ```
+<img width="144" alt="Screen Shot 2022-07-15 at 2 25 02 PM" src="https://user-images.githubusercontent.com/47149519/179287430-912ce6a0-d31a-40cd-bafe-939b0c6d6007.png">
 
 
 
